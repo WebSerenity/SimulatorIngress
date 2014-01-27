@@ -1,0 +1,882 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="#000000" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        
+    
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bt_border_off"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            
+			<!-- Zone badge -->
+            <LinearLayout
+                android:id="@+id/llBadge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/iv_border_off"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+                	<!--  Badge bronze - 1 -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagde_1"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/agent_bronze_small" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvBadge_1"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_bronze"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+		            
+	                <!--  Badge silver - 2 -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagde_2"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/agent_silver_small" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical"
+			                android:paddingLeft="15dp" >
+		
+			                <TextView
+		                        android:id="@+id/tvBadge_2"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_silver"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+
+	                <!--  Badge silver - 3 -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagde_3"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/agent_gold_small" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical"
+			                android:paddingLeft="15dp" >
+		
+			                <TextView
+		                        android:id="@+id/tvBadge_3"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_gold"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+		            
+	                <!--  Badge silver - 4 -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagde_4"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/agent_black_small" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical"
+			                android:paddingLeft="15dp" >
+		
+			                <TextView
+		                        android:id="@+id/tvBadge_4"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_black"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+		            
+	                <!--  Badge silver - 5 -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagde_5"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/agent_platinum_small" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvBadge_5"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_platinium"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+		            
+	                
+	                <!--  Badge Cadenas -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagdeCadenas"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/badge_cadenas" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical"
+			                android:paddingLeft="15dp" >
+		
+			                <TextView
+		                        android:id="@+id/tvBadgeCadenas"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_cadenas"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+
+                    	
+		            </LinearLayout>
+		            
+	                <!--  Badge Connector -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagdeConnector"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/badge_connector" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical"
+			                android:paddingLeft="15dp" >
+		
+			                <TextView
+		                        android:id="@+id/tvBadgeConnector"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_connector"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+		                
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvMoreConnector"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="more ..."
+		                        android:textColor="@color/color_bleu" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+		            
+	                <!--  Badge Seer -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagdeSeer"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/badge_seer" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical"
+			                android:paddingLeft="15dp" >
+		
+			                <TextView
+		                        android:id="@+id/tvBadgeSeer"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_seer"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+		                
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvMoreSeer"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="more ..."
+		                        android:textColor="@color/color_bleu" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+		            
+	                <!--  Badge Builder -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagdeBuilder"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/badge_builder" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical"
+			                android:paddingLeft="15dp" >
+		
+			                <TextView
+		                        android:id="@+id/tvBadgeBuilder"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_builder"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+		                
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvMoreBuilder"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="more ..."
+		                        android:textColor="@color/color_bleu" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+		            
+	                <!--  Badge Explorer -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagdeExplorer"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/badge_explorer" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical"
+			                android:paddingLeft="15dp" >
+		
+			                <TextView
+		                        android:id="@+id/tvBadgeExplorer"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_explorer"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+		                
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvMoreExplorer"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="more ..."
+		                        android:textColor="@color/color_bleu" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+	                
+	                
+	                <!--  Badge Guardian -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagdeGuardian"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/badge_guardian" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical"
+			                android:paddingLeft="15dp" >
+		
+			                <TextView
+		                        android:id="@+id/tvBadgeGuardian"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_guardian"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+		                
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvMoreGuardian"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="more ..."
+		                        android:textColor="@color/color_bleu" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+		            
+	                <!--  Badge Hacker -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagdeHacker"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/badge_hacker" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvBadgeHacker"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_hacker"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+		                
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvMoreHacker"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="more ..."
+		                        android:textColor="@color/color_bleu" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+		            
+	                <!--  Badge Mind -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagdeMind"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/badge_mind" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical"
+			                android:paddingLeft="15dp" >
+		
+			                <TextView
+		                        android:id="@+id/tvBadgeMind"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_mind"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+		                
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvMoreMind"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="more ..."
+		                        android:textColor="@color/color_bleu" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+		            
+	                <!--  Badge Purifier -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagdePurifier"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/badge_purifier" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvBadgePurifier"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_purifier"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+		                
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvMorePurifier"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="more ..."
+		                        android:textColor="@color/color_bleu" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+		            
+	                
+	                <!--  Badge Liberator -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagdePurifier"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/badge_liberator" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvBadgeLiberator"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_liberator"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+		                
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvMoreLiberator"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="more ..."
+		                        android:textColor="@color/color_bleu" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+		            
+	                
+	                <!--  Badge Pioner -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagdePioner"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/badge_pionner" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvBadgePioner"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_pioner"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+		                
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvMorePioner"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="more ..."
+		                        android:textColor="@color/color_bleu" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+	                
+	                <!--  Badge Founder -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/iv_border_off"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+
+                    	<LinearLayout
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:gravity="center_vertical"
+                    	    android:orientation="vertical" >
+		
+			                <ImageView
+			                    android:id="@+id/ivBagdeFounder"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/badge_founder" />
+		                </LinearLayout>
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvBadgeFounder"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="@string/agent_badge_founder"
+		                        android:textColor="@color/color_jaune" />
+		                </LinearLayout>
+		                
+		                <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:gravity="center_vertical"
+			                android:orientation="vertical" 
+			                android:paddingLeft="15dp">
+		
+			                <TextView
+		                        android:id="@+id/tvMoreFounder"
+		                        android:layout_width="match_parent"
+		                        android:layout_height="match_parent"
+		                        android:gravity="left"
+		                        android:text="more ..."
+		                        android:textColor="@color/color_bleu" />
+		                </LinearLayout>
+                    	
+		            </LinearLayout>
+	                
+	                
+	                
+                
+            </LinearLayout>
+            
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    </ScrollView>
+
+</LinearLayout> <!-- fin layout general -->

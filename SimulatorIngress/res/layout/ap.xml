@@ -1,0 +1,1417 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="#000000" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar" />
+	<ScrollView
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bt_border_off"
+        android:orientation="vertical"
+        android:padding="5dp" >
+        
+        <!-- Titre Colonne -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="horizontal"
+	        android:padding="5dp" >
+            <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:orientation="vertical"
+		        android:gravity="center_horizontal" >
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:gravity="left"
+		            android:text="@string/ap_action"
+		            android:textColor="@color/color_bleu"
+      				android:layout_gravity="center_horizontal"/>
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="2"
+		        android:orientation="vertical"
+		        android:gravity="center_horizontal" >
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:text="@string/ap_win"
+		            android:textColor="@color/color_bleu"
+      				android:layout_gravity="center_horizontal" />
+			</LinearLayout>
+			<LinearLayout
+			    android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="2"
+		        android:orientation="vertical"
+		        android:gravity="center_horizontal">
+		        <TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/ap_cost"
+		            android:gravity="center"
+		            android:textColor="@color/color_bleu"
+      				android:layout_gravity="center_horizontal"/>
+			</LinearLayout>
+		</LinearLayout>
+		
+        <!-- Hack ennemy -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- hack portal -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:gravity="center_vertical"
+	                android:orientation="vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_hack_ennemy_portal"
+			            android:textColor="@color/color_jaune" />
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center">
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="100"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="@string/ap_see_attack"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- hack Destroy reso -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_destroy_reso"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="75"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="@string/ap_see_attack"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- hack Destroy Link -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_destroy_link"
+			            android:textColor="@color/color_jaune" />
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="187"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center"
+			        >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="@string/ap_see_attack"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- hack Destroy field -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+		        
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_destroy_field"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="left"/>
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center"
+			        >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="@string/ap_see_attack"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center"
+			        >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="@string/ap_see_attack"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+	        
+		</LinearLayout> <!-- fin hack ennemy -->
+        
+        <!-- Resonator -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- hack portal -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:gravity="center_vertical"
+	                android:orientation="vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_set_reso"
+			            android:textColor="@color/color_jaune" />
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center">
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="50"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- first reso -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_set_reso_first"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="625"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="50"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- Reso last -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_set_reso_last"
+			            android:textColor="@color/color_jaune" />
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="250"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center"
+			        >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="50"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- reso recharge -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_set_reso_recharge"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="left"/>
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="10"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="@string/ap_see_reso"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- reso update -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_update_reso"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="left"/>
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="50"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+	        
+		</LinearLayout> <!-- fin reso -->
+		
+		<!-- hack friend -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- hack friend -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:gravity="center_vertical"
+	                android:orientation="vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_hack_friend_portal"
+			            android:textColor="@color/color_jaune" />
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center">
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="0"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="0"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout> <!-- fin hack friend -->
+		
+		
+		<!-- Link -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- create link -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:gravity="center_vertical"
+	                android:orientation="vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_create_link"
+			            android:textColor="@color/color_jaune" />
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center">
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="313"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="250"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- create field -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_create_field"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="1 523"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="250"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- double link -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_create_field_double"
+			            android:textColor="@color/color_jaune" />
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="2813"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center"
+			        >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="250"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+		</LinearLayout> <!-- fin link -->
+		
+		<!-- shield -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- shield common -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:gravity="center_vertical"
+	                android:orientation="vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_shield_common"
+			            android:textColor="@color/color_jaune" />
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center">
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="400"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- shield rare -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_shield_rare"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="800"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- shield very rare -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_shield_very_rare"
+			            android:textColor="@color/color_jaune" />
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center"
+			        >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="1 000"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+		</LinearLayout> <!-- fin shield -->
+		
+		<!-- heat sink -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- heat sink common -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:gravity="center_vertical"
+	                android:orientation="vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_heat_sink_common"
+			            android:textColor="@color/color_jaune" />
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center">
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="400"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- heat sink rare -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_heat_sink_rare"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="800"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- heat sink very rare -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_heat_sink_very_rare"
+			            android:textColor="@color/color_jaune" />
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center"
+			        >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="1 000"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+		</LinearLayout> <!-- fin heat sink -->
+		
+		<!-- multi hack -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- multi hack common -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:gravity="center_vertical"
+	                android:orientation="vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_multi_hack_common"
+			            android:textColor="@color/color_jaune" />
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center">
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="400"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- multi hack rare -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_multi_hack_rare"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="800"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+	        <!-- multi hack very rare -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_multi_hack_very_rare"
+			            android:textColor="@color/color_jaune" />
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center"
+			        >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="1 000"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+		</LinearLayout> <!-- fin multi hack -->
+		
+		<!-- link amp -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			
+	        <!-- link amp rare -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_link_amp_rare"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="800"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+		</LinearLayout> <!-- fin link amp -->
+		
+		<!-- force amp -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			
+	        <!-- force amp rare -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_force_amp_rare"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="800"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+		</LinearLayout> <!-- fin force amp -->
+		
+		<!-- turret amp -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			
+	        <!-- turret rare -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+	            <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="1"
+			        android:orientation="vertical"
+			        android:gravity="center_vertical" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left|center_vertical"
+			            android:text="@string/ap_turret_rare"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="center"
+			            android:text="125"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+				<LinearLayout
+				    android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="2"
+			        android:orientation="vertical"
+			        android:gravity="center" >
+			        <TextView
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:text="800"
+			            android:gravity="center"
+			            android:textColor="@color/color_jaune"
+	      				android:layout_gravity="center_horizontal"/>
+				</LinearLayout>
+			</LinearLayout>
+			
+		</LinearLayout> <!-- fin force amp -->
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout> <!-- fin layout general -->

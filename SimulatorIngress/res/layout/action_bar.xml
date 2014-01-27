@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_black"
+    android:orientation="horizontal" >
+
+	<LinearLayout
+	    android:id="@+id/llActionBar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@color/color_black"
+	    android:orientation="horizontal"
+	    android:paddingRight="10dp" >
+
+	    <Button
+	        android:id="@+id/btSimulator"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_simulator"
+	        android:textColor="@color/color_off" />
+	    <Button
+	        android:id="@+id/btRound"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_round"
+	        android:textColor="@color/color_off" />
+		
+	    <Button
+	        android:id="@+id/btLevel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_level"
+	        android:textColor="@color/color_off"
+	        android:textColorLink="@color/color_off" />
+	    
+	    <Button
+	        android:id="@+id/btAgent"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_agent"
+	        android:textColor="@color/color_off"
+	        android:textColorLink="@color/color_off" />
+	    
+	    <Button
+	        android:id="@+id/btAP"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_ap"
+	        android:textColor="@color/color_off"
+	        android:textColorLink="@color/color_off" />
+	    <Button
+	        android:id="@+id/btHack"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_hack"
+	        android:textColor="@color/color_off"
+	        android:textColorLink="@color/color_off" />
+	    <Button
+	        android:id="@+id/btAttack"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_attack"
+	        android:textColor="@color/color_off"
+	        android:textColorLink="@color/color_off" />
+	    
+	    <Button
+	        android:id="@+id/btPortal"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_portal"
+	        android:textColor="@color/color_off"
+	        android:textColorLink="@color/color_off" />
+	    
+	    <Button
+	        android:id="@+id/btResonator"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_resonator"
+	        android:textColor="@color/color_off" />
+	    
+	    <Button
+	        android:id="@+id/btMod"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_mod"
+	        android:textColor="@color/color_off"
+	        android:textColorLink="@color/color_off" />
+
+	    
+	    <Button
+	        android:id="@+id/btWeapon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_weapon"
+	        android:textColor="@color/color_off" />
+	    
+	    <Button
+	        android:id="@+id/btVirus"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_virus"
+	        android:textColor="@color/color_off" />
+	    
+	    <Button
+	        android:id="@+id/btPowerCube"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_power_cube"
+	        android:textColor="@color/color_off" />
+	    
+	    <Button
+	        android:id="@+id/btMedia"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_media"
+	        android:textColor="@color/color_off" />
+	    <Button
+	        android:id="@+id/btPortalKey"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_portal_key"
+	        android:textColor="@color/color_off" />
+	    
+	
+	</LinearLayout>
+</HorizontalScrollView>

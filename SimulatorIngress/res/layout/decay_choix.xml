@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_decay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+	<!-- Ligne 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<!-- 1 -->
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bt_border_off"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvChoixDecay_0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1j"
+                android:textColor="@color/color_on"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+		<!-- 2 -->
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bt_border_off"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvChoixDecay_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="2j"
+                android:textColor="@color/color_on"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+		<!-- 3 -->
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bt_border_off"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvChoixDecay_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="3j"
+                android:textColor="@color/color_on"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <!-- Ligne 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<!-- 4 -->
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bt_border_off"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvChoixDecay_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="4j"
+                android:textColor="@color/color_on"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+		<!-- VIDE -->
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bt_border_off"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvChoixDecay_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_on"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+		<!-- 5 -->
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bt_border_off"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvChoixDecay_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="5j"
+                android:textColor="@color/color_on"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <!-- Ligne 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<!-- 6 -->
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bt_border_off"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvChoixDecay_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="6j"
+                android:textColor="@color/color_on"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+		<!-- 7 -->
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bt_border_off"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvChoixDecay_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/color_on"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+		<!-- 8 -->
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bt_border_off"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvChoixDecay_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="7j"
+                android:textColor="@color/color_on"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>

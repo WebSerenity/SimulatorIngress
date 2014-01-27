@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ingress Simulator</string>
+    <string name="menu_help">Help</string>
+    <string name="gene_ok">Ok</string>
+    <string name="gene_quit">Quit</string>
+    <string name="gene_info">Information</string>
+    <string name="gene_dev">In development</string>
+    
+    
+    <string name="tab_simulator">Simulator</string>
+    <string name="tab_round">Round</string>
+    <string name="tab_level">Level</string>
+    <string name="tab_ap">AP</string>
+    <string name="tab_agent">Agent</string>
+    <string name="tab_hack">Hack</string>
+    <string name="tab_attack">Attack</string>
+    <string name="tab_portal">Portal</string>
+    <string name="tab_mod">Mod</string>
+    <string name="tab_weapon">Weapon</string>
+    <string name="tab_virus">Virus</string>
+    <string name="tab_portal_key">Portal Key</string>
+    <string name="tab_resonator">Resonator</string>
+    <string name="tab_power_cube">Power Cube</string>
+    <string name="tab_media">Media</string>
+    
+    <string name="common">Common</string>
+    <string name="rare">Rare</string>
+    <string name="very_rare">Very Rare</string>
+    
+    <string name="gps_get_portal">Get Portal - in development</string>
+    <string name="gps_notavailable">GPS Not available. Please actif it</string>
+    <string name="gps_get_position">Getting position</string>
+    <string name="gps_get_nearest">Getting nearest portal</string>
+    <string name="gps_nearest_portal">Nearest Portal</string>
+    <string name="gps_name">Name :</string>
+    
+    
+    <string name="name_shield">Shield</string>
+    <string name="name_link_amp">Link Amp</string>
+    <string name="name_heat_sink">Heat Sink</string>
+    <string name="name_multi_hack">Multi Hack</string>
+    <string name="name_force_amp">Force Amp</string>
+    <string name="name_turret">Turret</string>
+    
+    
+    <string name="N">N</string>
+    <string name="S">S</string>
+    <string name="E">E</string>
+    <string name="W">W</string>
+    <string name="NW">NW</string>
+    <string name="NE">NE</string>
+    <string name="SW">SW</string>
+    <string name="SE">SE</string>
+    
+    <string name="level">Level :</string>
+    <string name="energy">Energy :</string>
+    <string name="decay">Decay :</string>
+    <string name="link">Link :</string>
+    <string name="field">Field :</string>
+    <string name="range">Range :</string>
+    <string name="hack">Hack :</string>
+    <string name="cooldown">Cooldown :</string>
+    <string name="turret">Turret :</string>
+    <string name="force_amp">Damage :</string>
+    <string name="hit_bonus">Hit Bonus :</string>
+    <string name="attack_frequency">Attack Frequency :</string>
+    <string name="shield">Portal Shield :</string>
+    
+    <string name="link_popup_titre">Nbr of links</string>
+    <string name="field_popup_titre">Nbr of fields</string>
+    
+    <string name="general_absorption">General Absorption :</string>
+    <string name="general_energy">Equivalent Energy :</string>
+    <string name="general_xmpbuster">XmpBuster number to destroy :</string>
+    <string name="general_xm_cost">XM cost to destroy :</string>
+    <string name="general_ap_destroy">Exp if destroy :</string>
+    <string name="general_ap_create">Exp if create :</string>
+    
+    <string name="level_level">Level</string>
+    <string name="level_ap">AP required</string>
+    <string name="level_xm">Max XM</string>
+    
+    <string name="reso_level">Level :</string>
+    <string name="reso_energy">Energy :</string>
+    <string name="reso_decay">Decay :</string>
+    <string name="reso_cost">XM cost :</string>
+    <string name="reso_gain_first">AP if First deployment :</string>
+    <string name="reso_gain_last">AP if Last deployment :</string>
+    <string name="reso_gain_other">AP for other deployment :</string>
+    <string name="reso_recycle">Recycle :</string>
+    <string name="reso_titre">Level</string>
+    
+    <string name="agent_badge_bronze">First level :</string>
+    <string name="agent_badge_bronze_2">Bronze</string>
+    <string name="agent_badge_silver">Second level :</string>
+    <string name="agent_badge_silver_2">Silver</string>
+    <string name="agent_badge_gold">Third level :</string>
+    <string name="agent_badge_gold_2">Gold</string>
+    <string name="agent_badge_black">Fourth level :</string>
+    <string name="agent_badge_black_2">Black</string>
+    <string name="agent_badge_platinium">Fifth level :</string>
+    <string name="agent_badge_platinium_2">Platinium</string>
+    
+    <string name="agent_badge_cadenas">Medal Locked</string>
+    <string name="agent_badge_connector">Connector</string>
+    <string name="agent_badge_seer">Seer</string>
+    <string name="agent_badge_builder">Builder</string>
+    <string name="agent_badge_explorer">Explorer</string>
+    <string name="agent_badge_guardian">Guardian</string>
+    <string name="agent_badge_hacker">Hacker</string>
+    <string name="agent_badge_mind">Mind</string>
+    <string name="agent_badge_purifier">Purifier</string>
+    <string name="agent_badge_liberator">Liberator</string>
+    <string name="agent_badge_pioner">Pioner</string>
+    <string name="agent_badge_founder">Founder</string>
+    
+    <string name="agent_info_discovery">Discovery</string>
+    <string name="agent_info_discovery_unique">Nbr of portals visited</string>
+    <string name="agent_info_discovery_discovery">Nbr of portals discovered</string>
+    <string name="agent_info_building">Building</string>
+    <string name="agent_info_building_hack">Nbr of hacks on friend portal</string>
+    <string name="agent_info_building_reso">Nbr of resonators deployed</string>
+    <string name="agent_info_building_link">Nbr of links created</string>
+    <string name="agent_info_building_field">Nbr of fields created</string>
+    <string name="agent_info_combat">Combat</string>
+    <string name="agent_info_combat_reso">Nbr of enemy resonators destroyed</string>
+    <string name="agent_info_combat_link">Nbr of enemy links destroyed</string>
+    <string name="agent_info_combat_field">Nbr of enemy fields destroyed</string>
+    <string name="agent_info_defense">Defense</string>
+    <string name="agent_info_defense_time">Maximum time the portal held</string>
+    
+    
+    <string name="agent_gen">General Information</string>
+    <string name="agent_gen_discovery">Discovery</string>
+    <string name="agent_gen_discovery_unique">Nbr of unique portals visited</string>
+    <string name="agent_gen_discovery_discover">Nbr of portals discovered</string>
+    <string name="agent_gen_build">Building</string>
+    <string name="agent_gen_build_hack">Nbr of hacks done on friend portals</string>
+    <string name="agent_gen_build_reso">Nbr of resonators deployed</string>
+    <string name="agent_gen_build_link">Nbr of links created</string>
+    <string name="agent_gen_build_field">Nbr of fields created</string>
+    <string name="agent_gen_combat">Combat</string>
+    <string name="agent_gen_combat_reso">Nbr enemy resonators destroyed</string>
+    <string name="agent_gen_combat_link">Nbr enemy links destroyed</string>
+    <string name="agent_gen_combat_field">Nbr enemy fields destroyed</string>
+    <string name="agent_gen_defense">Defense</string>
+    <string name="agent_gen_defense_time">Maximum time for an own portal without destruction</string>
+    
+    
+    <string name="ap_action">Action</string>
+    <string name="ap_win">AP win</string>
+    <string name="ap_cost">XM cost</string>
+    <string name="ap_depend">Depend of portal</string>
+    <string name="ap_see_attack">See Attack</string>
+    <string name="ap_see_reso">See Resonator</string>
+    <string name="ap_hack_ennemy_portal">Hack ennemy portal</string>
+    <string name="ap_destroy_reso">Destroy resonator</string>
+    <string name="ap_destroy_link">Destroy link</string>
+    <string name="ap_destroy_field">Destroy field</string>
+    <string name="ap_hack_friend_portal">Hack friend portal</string>
+    
+    <string name="ap_set_reso_first">Set first resonator</string>
+    <string name="ap_set_reso_last">Set last resonator</string>
+    <string name="ap_set_reso">Set resonator (2 - 7)</string>
+    <string name="ap_set_reso_recharge">Recharge resonator</string>
+    <string name="ap_create_link">Create link</string>
+    <string name="ap_create_field">Create field</string>
+    <string name="ap_create_field_double">Create double field</string>
+    <string name="ap_update_reso">Update resonator</string>
+    
+    <string name="ap_shield_common">Set Common Shield</string>
+    <string name="ap_shield_rare">Set Rare Shield</string>
+    <string name="ap_shield_very_rare">Set Very Rare Shield</string>
+    
+    <string name="ap_heat_sink_common">Set Common Heat Sink</string>
+    <string name="ap_heat_sink_rare">Set Rare Heat Sink</string>
+    <string name="ap_heat_sink_very_rare">Set Very Rare Heat Sink</string>
+    
+    <string name="ap_multi_hack_common">Set Common Multi Hack</string>
+    <string name="ap_multi_hack_rare">Set Rare Multi Hack</string>
+    <string name="ap_multi_hack_very_rare">Set Very Rare Multi Hack</string>
+    
+    <string name="ap_link_amp_rare">Set Rare Link Amp</string>
+    <string name="ap_force_amp_rare">Set Rare Force Amp</string>
+    <string name="ap_turret_rare">Set Rare Turret</string>
+    
+    <string name="portal_level">Level :</string>
+    <string name="portal_energy">Energy :</string>
+    <string name="portal_decay">Decay per day :</string>
+    <string name="portal_range">Range :</string>
+    <string name="portal_reso">Nbr Max Resonators per player :</string>
+    <string name="portal_player">Nbr Players to complete :</string>
+    
+    
+    <string name="weapon_level">Level :</string>
+    <string name="weapon_damage">Damage :</string>
+    <string name="weapon_range">Range :</string>
+    <string name="weapon_decay">Decay :</string>
+    <string name="weapon_cost">XM cost :</string>
+    <string name="weapon_gain_first">AP if First deployment :</string>
+    <string name="weapon_gain_last">AP if Last deployment :</string>
+    <string name="weapon_gain_other">AP for other deployment :</string>
+    <string name="weapon_recycle">Recycle :</string>
+    <string name="weapon_titre">Weapon</string>
+    <string name="weapon_zone">Zone</string>
+    
+    <string name="power_level">Level :</string>
+    <string name="power_storage">Storage :</string>
+    <string name="power_recycle">Recycle :</string>
+    <string name="power_titre">Power Cube</string>
+    
+    <string name="virus_titre">Virus</string>
+    <string name="virus_ada">Ada</string>
+    <string name="virus_jarvis">Jarvis</string>
+    <string name="virus_damage">Damage : </string>
+    <string name="virus_damage_ada">Change the portal Green in Blue. \nBreak all links.</string>
+    <string name="virus_damage_jarvis">Change the portal Blue in Green. \nBreak all links.</string>
+    <string name="virus_freq">Frequency :</string>
+    <string name="virus_cost">XM cost :</string>
+    <string name="virus_cost_detail">1000 XM per level</string>
+    <string name="virus_recyle">Recycle :</string>
+    
+    <string name="media_titre">Media</string>
+    <string name="media_info">Info :</string>
+    <string name="media_info_detail">Give information about the game.\nGive secret code.</string>
+    <string name="media_recycle">Recycle :</string>
+    <string name="media_recycle_detail"> 20 * level XM</string>
+    
+    <string name="key_titre">Key</string>
+    <string name="key_info">Info :</string>
+    <string name="key_info_detail">Use to make a link. \nUse to recharge a portal.</string>
+    <string name="key_recycle">Recycle :</string>
+    <string name="key_recycle_detail"> 20 XM</string>
+    <string name="key_portal">Portal accepted </string>
+    <string name="key_photo">Change picture accepted </string>
+    
+    <string name="mod_info_1">2 mods per player</string>
+    <string name="mod_info_2">Removal not possible</string>
+    <string name="mod_titre">Mod</string>
+    <string name="mod_name">Name :</string>
+    <string name="mod_freq">Frequency :</string>
+    <string name="mod_info">Info :</string>
+    <string name="mod_absorption">Absorption :</string>
+    <string name="mod_range">Range :</string>
+    <string name="mod_cooldown">Cooldown :</string>
+    <string name="mod_hack">Hack :</string>
+    <string name="mod_force_amp">Force Amp :</string>
+    <string name="mod_turret">Damage :</string>
+    <string name="mod_change"> decrease with nbr of mods</string>
+    <string name="mod_damage">Damage :</string>
+    
+    <string name="mod_cost">XM cost :</string>
+    <string name="mod_recycle">Recycle :</string>
+    
+    <string name="mod_info_shield">Used to protect the portal.</string>
+    <string name="mod_info_link_amp">Used to increase the range of portal</string>
+    <string name="mod_info_heat_sink">Used to reduce the time between hack.</string>
+    <string name="mod_info_multi_hack">Used to increase the number of hack</string>
+    <string name="mod_info_force_amp">Used to increase the attack damage of portal.</string>
+    <string name="mod_info_turret">Used to increase the attack frequency and hit bonus.</string>
+    
+    
+    
+    <string name="hack_hack">Hack an ennemy portal.</string>
+    <string name="hack_cost">XM cost</string>
+    <string name="hack_attack">Normal attack by portal</string>
+    <string name="hack_attack_critic">Critical attack by portal</string>
+    <string name="hack_level">Level</string>
+    
+    <string name="attack_simple">Simple attack by a portal.</string>
+    <string name="attack_cost">XM cost</string>
+    <string name="attack_critical">Critical attack by a portal</string>
+    <string name="attack_level">Level</string>
+    
+    <string name="help_version">Version : </string>
+    <string name="help_reso">. Click on a resonator to select its level</string>
+    <string name="help_decay">. Click on Decay to define the number of days to decay</string>
+    <string name="help_link">. Click on Link to define the number of links</string>
+    <string name="help_field">. Click on Field to define the number of fields</string>
+    <string name="help_mod">. Click on upper arrow or downer arrow to define a mod</string>
+    
+    
+    <string name="round_titre">Round Calculation</string>
+    <string name="round_actual">Actual XM :</string>
+    <string name="round_error_actual">Please, set Actual XM !</string>
+    <string name="round_error_number">Actual and Objectif must not containt space or dot.</string>
+    <string name="round_objectif">Objectif XM :</string>
+    <string name="round_error_objectif">Please, set Objectif XM !</string>
+    <string name="round_calculate">Calculate</string>
+    <string name="round_create">Create</string>
+    <string name="round_link">link(s)</string>
+    <string name="round_hack">Hack ennemy portal</string>
+    <string name="round_recharge">Recharge</string>
+    <string name="round_mod">Set Mod(s)</string>
+    <string name="round_impossible">Objectif Impossible</string>
+    <string name="round_use">Use Hack and or Recharge resonator</string>
+    <string name="round_too_small">Objectif must be higher than Actual</string>
+    
+
+</resources>

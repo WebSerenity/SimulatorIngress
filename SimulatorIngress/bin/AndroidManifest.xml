@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.simulator.ingress"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_ws_ingress"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.simultor.ingress.Simulator"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.simultor.ingress.Level"></activity>
+        <activity android:name="com.simultor.ingress.Resonator"></activity>
+        <activity android:name="com.simultor.ingress.Mod"></activity>
+        <activity android:name="com.simultor.ingress.AP"></activity>
+        <activity android:name="com.simultor.ingress.Portal"></activity>
+        <activity android:name="com.simultor.ingress.Weapon"></activity>
+        <activity android:name="com.simultor.ingress.PowerCube"></activity>
+        <activity android:name="com.simultor.ingress.Virus"></activity>
+        <activity android:name="com.simultor.ingress.Media"></activity>
+        <activity android:name="com.simultor.ingress.Key"></activity>
+        <activity android:name="com.simultor.ingress.Hack"></activity>
+        <activity android:name="com.simultor.ingress.Attack"></activity>
+        <activity android:name="com.simultor.ingress.Help"></activity>
+        <activity android:name="com.simultor.ingress.Agent"></activity>
+        <activity android:name="com.simultor.ingress.Round"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="#000000" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar" />
+    <ScrollView
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bt_border_off"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical" 
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_border_off"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp" >
+
+                    <TextView
+                        android:id="@+id/tvRoundTitre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/round_titre"
+                        android:textColor="@color/color_bleu" />
+
+                    <TextView
+                        android:id="@+id/tvRoundActual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/round_actual"
+                        android:textColor="@color/color_bleu" />
+
+                    <EditText
+                        android:id="@+id/etActual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:textColor="@color/color_on" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/tvRoundObjectif"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/round_objectif"
+                        android:textColor="@color/color_bleu" />
+
+                    <EditText
+                        android:id="@+id/etObjectif"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:textColor="@color/color_on" />
+
+                    <Button
+                        android:id="@+id/btRoundCalcul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/round_calculate"
+                        android:textColor="@color/color_bleu" />
+
+                    <TextView
+                        android:id="@+id/tvRoundSeq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@color/color_bleu" />
+
+                </LinearLayout>
+
+                
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+	</ScrollView>
+</LinearLayout> <!-- fin layout general -->

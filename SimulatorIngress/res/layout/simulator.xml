@@ -1,0 +1,1076 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="#000000" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar" />
+    <ScrollView
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+	<!-- Zone Mod -->
+    <LinearLayout
+        android:id="@+id/ll_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bt_border_off"
+        android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llGetPortal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_border_off"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvPortalGet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#477076"
+                        android:gravity="center"
+                        android:text="@string/gps_get_portal"
+                        android:textColor="@color/color_bleu" />
+                    <TextView
+                        android:id="@+id/tvPortalInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#477076"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/color_bleu" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ProgressBar
+                        android:id="@+id/pbGetReso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/bt_border_off"
+	            android:gravity="center_horizontal"
+	            android:orientation="horizontal" >
+				<!-- Mod 0 -->
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/mod_border"
+	                    android:orientation="vertical" >
+
+	                    <ImageButton
+	                        android:id="@+id/ibModUp_0"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/mod_bt_up" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/llMod_0"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/mod_border"
+	                    android:orientation="vertical" >
+
+	                    <ImageButton
+	                        android:id="@+id/ibMod_0"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/force_amp_rare_small" />
+	                </LinearLayout>
+	                
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:gravity="center_horizontal"
+	                    android:background="@drawable/mod_border"
+	                    android:orientation="vertical" >
+
+	                    <TextView
+	                        android:id="@+id/tvName_0"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="match_parent"
+	                        android:gravity="center"
+	                        android:text="@string/name_shield"
+	                        android:textColor="@color/color_jaune"
+	                        android:textSize="12sp" />
+
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/mod_border"
+	                    android:orientation="vertical" >
+
+	                    <ImageButton
+	                        android:id="@+id/ibModDown_0"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/mod_bt_down" />
+	                </LinearLayout>
+
+	                
+
+	            </LinearLayout>
+				<!-- Mod 1 -->
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/mod_border"
+	                    android:orientation="vertical" >
+
+	                    <ImageButton
+	                        android:id="@+id/ibModUp_1"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/mod_bt_up" />
+	                </LinearLayout>
+
+	                <LinearLayout
+	                    android:id="@+id/llMod_1"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/mod_border"
+	                    android:orientation="vertical" >
+
+	                    <ImageButton
+	                        android:id="@+id/ibMod_1"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/force_amp_rare_small" />
+	                </LinearLayout>
+					<LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:gravity="center_horizontal"
+	                    android:background="@drawable/mod_border"
+	                    android:orientation="vertical" >
+
+	                    <TextView
+	                        android:id="@+id/tvName_1"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="match_parent"
+	                        android:gravity="center"
+	                        android:text="@string/name_shield"
+	                        android:textColor="@color/color_jaune"
+	                        android:textSize="12sp" />
+
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/mod_border"
+	                    android:orientation="vertical" >
+
+	                    <ImageButton
+	                        android:id="@+id/ibModDown_1"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:background="@drawable/mod_bt_down" />
+	                </LinearLayout>
+	            </LinearLayout>
+			<!-- Mod 2 -->
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+				<LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:background="@drawable/mod_border" >
+
+		            <ImageButton
+		                android:id="@+id/ibModUp_2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/mod_bt_up" />
+
+	            </LinearLayout>
+				<LinearLayout
+				    android:id="@+id/llMod_2"
+	            	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:orientation="vertical"
+	            	android:background="@drawable/mod_border" >
+		            <ImageButton
+		                android:id="@+id/ibMod_2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/force_amp_rare_small" />
+				</LinearLayout>
+				<LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:gravity="center_horizontal"
+	                    android:background="@drawable/mod_border"
+	                    android:orientation="vertical" >
+
+	                    <TextView
+	                        android:id="@+id/tvName_2"
+	                        android:layout_width="match_parent"
+						    android:layout_height="match_parent"
+						    android:text="@string/name_shield"
+						    android:gravity="center"
+						    android:textColor="@color/color_jaune" 
+						    android:textSize="12sp" 
+						    />
+	                </LinearLayout>
+				<LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:background="@drawable/mod_border" >
+		            <ImageButton
+		                android:id="@+id/ibModDown_2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:background="@drawable/mod_bt_down" />
+				</LinearLayout>
+	        </LinearLayout>
+			<!-- Mod 3 -->
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/mod_border"
+	                android:orientation="vertical" >
+	
+	                <ImageButton
+	                    android:id="@+id/ibModUp_3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/mod_bt_up" />
+	            </LinearLayout>
+	
+	            <LinearLayout
+	                android:id="@+id/llMod_3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/mod_border"
+	                android:orientation="vertical" >
+	
+	                <ImageButton
+	                    android:id="@+id/ibMod_3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/force_amp_rare_small" />
+	            </LinearLayout>
+				<LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:gravity="center_horizontal"
+	                    android:background="@drawable/mod_border"
+	                    android:orientation="vertical" >
+
+	                    <TextView
+	                        android:id="@+id/tvName_3"
+	                        android:layout_width="match_parent"
+						    android:layout_height="match_parent"
+						    android:text="@string/name_shield"
+						    android:gravity="center"
+						    android:textColor="@color/color_jaune" 
+						    android:textSize="12sp" 
+						    />
+	                </LinearLayout>
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/mod_border"
+	                android:orientation="vertical" >
+	
+	                <ImageButton
+	                    android:id="@+id/ibModDown_3"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/mod_bt_down" />
+	            </LinearLayout>
+	       
+		</LinearLayout> <!-- Fin LL des Mods -->
+		<!--  Get reso -->    
+	    </LinearLayout>
+			<!-- Zone Reso -->
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/bt_border_off"
+	            android:orientation="horizontal" >
+
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:orientation="vertical" >
+
+					<!-- Zone Reso ligne 1 -->
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center_horizontal"
+	                    android:orientation="horizontal" >
+
+	                    <LinearLayout
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:orientation="vertical" >
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:background="@drawable/reso_border"
+	                            android:orientation="vertical" >
+
+	                            <TextView
+	                                android:id="@+id/tvLevel_0"
+	                                android:layout_width="match_parent"
+	                                android:layout_height="wrap_content"
+	                                android:gravity="center_horizontal"
+	                                android:text="L7"
+	                                android:textColor="@color/color_orientation"
+	                                android:textStyle="bold" />
+	                        </LinearLayout>
+
+	                        <LinearLayout
+	                            android:id="@+id/LinearLayout02"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:background="@drawable/reso_border"
+	                            android:orientation="vertical" >
+
+	                            <Button
+	                                android:id="@+id/btReso_0"
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:background="@color/color_orientation" />
+	                        </LinearLayout>
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:background="@drawable/reso_border"
+	                            android:orientation="vertical" >
+
+	                            <TextView
+	                                android:id="@+id/tvOrientation_0"
+	                                android:layout_width="match_parent"
+	                                android:layout_height="wrap_content"
+	                                android:gravity="center_horizontal"
+	                                android:text="@string/NW"
+	                                android:textColor="@color/color_orientation" />
+	                        </LinearLayout>
+	                    </LinearLayout>
+
+	                    <LinearLayout
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:orientation="vertical" >
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:background="@drawable/reso_border"
+	                            android:orientation="vertical" >
+
+	                            <TextView
+	                                android:id="@+id/tvLevel_1"
+	                                android:layout_width="match_parent"
+	                                android:layout_height="wrap_content"
+	                                android:gravity="center_horizontal"
+	                                android:text="L7"
+	                                android:textColor="@color/color_orientation"
+	                                android:textStyle="bold" />
+	                        </LinearLayout>
+
+	                        <LinearLayout
+	                            android:id="@+id/LinearLayout02"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:background="@drawable/reso_border"
+	                            android:orientation="vertical" >
+
+	                            <Button
+	                                android:id="@+id/btReso_1"
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:background="@color/color_orientation" />
+	                        </LinearLayout>
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:background="@drawable/reso_border"
+	                            android:orientation="vertical" >
+
+	                            <TextView
+	                                android:id="@+id/tvOrientation_1"
+	                                android:layout_width="match_parent"
+	                                android:layout_height="wrap_content"
+	                                android:gravity="center_horizontal"
+	                                android:text="@string/N"
+	                                android:textColor="@color/color_orientation" />
+	                        </LinearLayout>
+	                    </LinearLayout>
+
+	                    <LinearLayout
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:orientation="vertical" >
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:background="@drawable/reso_border"
+	                            android:orientation="vertical" >
+
+	                            <TextView
+	                                android:id="@+id/tvLevel_2"
+	                                android:layout_width="match_parent"
+	                                android:layout_height="wrap_content"
+	                                android:gravity="center_horizontal"
+	                                android:text="L7"
+	                                android:textColor="@color/color_orientation"
+	                                android:textStyle="bold" />
+	                        </LinearLayout>
+
+	                        <LinearLayout
+	                            android:id="@+id/LinearLayout02"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:background="@drawable/reso_border"
+	                            android:orientation="vertical" >
+
+	                            <Button
+	                                android:id="@+id/btReso_2"
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:background="@color/color_orientation" />
+	                        </LinearLayout>
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:background="@drawable/reso_border"
+	                            android:orientation="vertical" >
+
+	                            <TextView
+	                                android:id="@+id/tvOrientation_2"
+	                                android:layout_width="match_parent"
+	                                android:layout_height="wrap_content"
+	                                android:gravity="center_horizontal"
+	                                android:text="@string/NE"
+	                                android:textColor="@color/color_orientation" />
+	                        </LinearLayout>
+	                    </LinearLayout>
+
+	                    <LinearLayout
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:orientation="vertical" >
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:background="@drawable/reso_border"
+	                            android:orientation="vertical" >
+
+	                            <TextView
+	                                android:id="@+id/tvLevel_3"
+	                                android:layout_width="match_parent"
+	                                android:layout_height="wrap_content"
+	                                android:gravity="center_horizontal"
+	                                android:text="L7"
+	                                android:textColor="@color/color_orientation"
+	                                android:textStyle="bold" />
+	                        </LinearLayout>
+
+	                        <LinearLayout
+	                            android:id="@+id/LinearLayout02"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:background="@drawable/reso_border"
+	                            android:orientation="vertical" >
+
+	                            <Button
+	                                android:id="@+id/btReso_3"
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:background="@color/color_orientation" />
+	                        </LinearLayout>
+
+	                        <LinearLayout
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:background="@drawable/reso_border"
+	                            android:orientation="vertical" >
+
+	                            <TextView
+	                                android:id="@+id/tvOrientation_3"
+	                                android:layout_width="match_parent"
+	                                android:layout_height="wrap_content"
+	                                android:gravity="center_horizontal"
+	                                android:text="@string/E"
+	                                android:textColor="@color/color_orientation" />
+	                        </LinearLayout>
+	                    </LinearLayout>
+	                </LinearLayout>
+
+	            
+		        	<!-- Zone Reso ligne 2 -->
+	
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_horizontal"
+		                android:orientation="horizontal" >
+	
+						<!-- Reso 4 -->
+			            <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:orientation="vertical" >
+		
+			                <LinearLayout
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/reso_border"
+			                    android:orientation="vertical" >
+		
+			                    <TextView
+			                        android:id="@+id/tvLevel_4"
+			                        android:layout_width="match_parent"
+		                            android:layout_height="wrap_content"
+		                            android:gravity="center_horizontal"
+			                        android:text="L7"
+			                        android:textColor="@color/color_orientation"
+			                        android:textStyle="bold" />
+		
+			                </LinearLayout>
+		
+			                <LinearLayout
+			                    android:id="@+id/LinearLayout01"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/reso_border"
+			                    android:orientation="vertical" >
+		
+			                    <Button
+			                        android:id="@+id/btReso_4"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:background="@color/color_orientation" />
+		
+			                </LinearLayout>
+		
+			                <LinearLayout
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/reso_border"
+			                    android:orientation="vertical" >
+		
+			                    <TextView
+			                        android:id="@+id/tvOrientation_4"
+			                        android:layout_width="match_parent"
+			                        android:layout_height="wrap_content"
+			                        android:gravity="center_horizontal"
+			                        android:text="@string/W"
+			                        android:textColor="@color/color_orientation" />
+		
+			                </LinearLayout>
+			            </LinearLayout>
+			            <!-- Reso 5 -->
+			            <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:orientation="vertical" >
+		
+			                <LinearLayout
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/reso_border"
+			                    android:orientation="vertical" >
+		
+			                    <TextView
+			                        android:id="@+id/tvLevel_5"
+			                        android:layout_width="match_parent"
+		                            android:layout_height="wrap_content"
+		                            android:gravity="center_horizontal"
+			                        android:text="L7"
+			                        android:textColor="@color/color_orientation"
+			                        android:textStyle="bold" />
+		
+			                </LinearLayout>
+		
+			                <LinearLayout
+			                    android:id="@+id/LinearLayout01"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/reso_border"
+			                    android:orientation="vertical" >
+		
+			                    <Button
+			                        android:id="@+id/btReso_5"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:background="@color/color_orientation" />
+		
+			                </LinearLayout>
+		
+			                <LinearLayout
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/reso_border"
+			                    android:orientation="vertical" >
+		
+			                    <TextView
+			                        android:id="@+id/tvOrientation_5"
+			                        android:layout_width="match_parent"
+			                        android:layout_height="wrap_content"
+			                        android:gravity="center_horizontal"
+			                        android:text="@string/SW"
+			                        android:textColor="@color/color_orientation" />
+		
+			                </LinearLayout>
+			            </LinearLayout>
+			            <!-- Reso 6 -->
+			            <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:orientation="vertical" >
+		
+			                <LinearLayout
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/reso_border"
+			                    android:orientation="vertical" >
+		
+			                    <TextView
+			                        android:id="@+id/tvLevel_6"
+			                        android:layout_width="match_parent"
+		                            android:layout_height="wrap_content"
+		                            android:gravity="center_horizontal"
+			                        android:text="L7"
+			                        android:textColor="@color/color_orientation"
+			                        android:textStyle="bold" />
+		
+			                </LinearLayout>
+		
+			                <LinearLayout
+			                    android:id="@+id/LinearLayout01"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/reso_border"
+			                    android:orientation="vertical" >
+		
+			                    <Button
+			                        android:id="@+id/btReso_6"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:background="@color/color_orientation" />
+		
+			                </LinearLayout>
+		
+			                <LinearLayout
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/reso_border"
+			                    android:orientation="vertical" >
+		
+			                    <TextView
+			                        android:id="@+id/tvOrientation_6"
+			                        android:layout_width="match_parent"
+			                        android:layout_height="wrap_content"
+			                        android:gravity="center_horizontal"
+			                        android:text="@string/S"
+			                        android:textColor="@color/color_orientation" />
+		
+			                </LinearLayout>
+			            </LinearLayout>
+			            <!-- Reso 7 -->
+			            <LinearLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:orientation="vertical" >
+		
+			                <LinearLayout
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/reso_border"
+			                    android:orientation="vertical" >
+		
+			                    <TextView
+			                        android:id="@+id/tvLevel_7"
+			                        android:layout_width="match_parent"
+		                            android:layout_height="wrap_content"
+		                            android:gravity="center_horizontal"
+			                        android:text="L7"
+			                        android:textColor="@color/color_orientation"
+			                        android:textStyle="bold" />
+		
+			                </LinearLayout>
+		
+			                <LinearLayout
+			                    android:id="@+id/LinearLayout01"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/reso_border"
+			                    android:orientation="vertical" >
+		
+			                    <Button
+			                        android:id="@+id/btReso_7"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:background="@color/color_orientation" />
+		
+			                </LinearLayout>
+		
+			                <LinearLayout
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:background="@drawable/reso_border"
+			                    android:orientation="vertical" >
+		
+			                    <TextView
+			                        android:id="@+id/tvOrientation_7"
+			                        android:layout_width="match_parent"
+			                        android:layout_height="wrap_content"
+			                        android:gravity="center_horizontal"
+			                        android:text="@string/SE"
+			                        android:textColor="@color/color_orientation" />
+		
+			                </LinearLayout>
+			            </LinearLayout>
+		            </LinearLayout>
+				</LinearLayout>
+
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="2"
+	                android:orientation="vertical" >
+
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="vertical" >
+
+	                    <TextView
+	                        android:id="@+id/tvResoLevel"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="Level"
+	                        android:textColor="@color/color_bleu" />
+
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal" >
+		                <LinearLayout
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:orientation="vertical"
+		                    android:layout_weight="1" >
+	
+		                    <TextView
+		                        android:id="@+id/tvResoEnergy"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:text="Energy"
+		                        android:textColor="@color/color_bleu"
+		                         />
+	
+		                </LinearLayout>
+		                
+		                <LinearLayout
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:orientation="vertical"
+		                    android:layout_weight="1" >
+	
+		                    <TextView
+		                        android:id="@+id/tvResoDecay"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:background="#477076"
+		                        android:text="@string/decay"
+		                        android:textColor="@color/color_bleu" />
+	
+		                </LinearLayout>
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="vertical" >
+
+	                    <TextView
+	                        android:id="@+id/tvResoRange"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="@string/range"
+	                        android:textColor="@color/color_bleu" />
+
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="horizontal" >
+		                <LinearLayout
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:orientation="vertical"
+		                    android:layout_weight="1" >
+	
+		                    <TextView
+		                        android:id="@+id/tvResoLink"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:background="#477076"
+		                        android:text="@string/link"
+		                        android:textColor="@color/color_bleu" />
+	
+		                </LinearLayout>
+		                
+		                <LinearLayout
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:orientation="vertical"
+		                    android:layout_weight="1" >
+	
+		                    <TextView
+		                        android:id="@+id/tvResoField"
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:background="#477076"
+		                        android:text="@string/field"
+		                        android:textColor="@color/color_bleu" />
+	
+		                </LinearLayout>
+	                </LinearLayout>
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="vertical" >
+
+	                    <TextView
+	                        android:id="@+id/tvResoHack"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="@string/hack"
+	                        android:textColor="@color/color_bleu" />
+
+	                </LinearLayout>
+	                
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="vertical" >
+
+	                    <TextView
+	                        android:id="@+id/tvResoCooldown"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="@string/cooldown"
+	                        android:textColor="@color/color_bleu" />
+
+	                </LinearLayout>
+	                
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="vertical" >
+
+	                    <TextView
+	                        android:id="@+id/tvResoForceAmp"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="@string/force_amp"
+	                        android:textColor="@color/color_bleu" />
+
+	                </LinearLayout>
+	                
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="vertical" >
+
+	                    <TextView
+	                        android:id="@+id/tvResoAttackFrequency"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="@string/attack_frequency"
+	                        android:textColor="@color/color_bleu" />
+
+	                </LinearLayout>
+	                
+	                <LinearLayout
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="vertical" >
+
+	                    <TextView
+	                        android:id="@+id/tvResoPortalShield"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:text="@string/shield"
+	                        android:textColor="@color/color_bleu" />
+
+	                </LinearLayout>
+
+	            </LinearLayout>
+
+	        
+
+	</LinearLayout> <!--  fin layout Reso -->
+	<!-- Zone General  -->
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bt_border_off"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+	    <!-- Zone Puissance -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+	        <LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvGenAbsorption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/general_absorption"
+                    android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvGenEnergy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/general_energy"
+                    android:textColor="@color/color_bleu" />
+			</LinearLayout>
+		</LinearLayout> <!-- fin zone puissance -->
+		
+		<!-- XMP buster -->
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+	        <LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvGenXmpBuster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/general_xmpbuster"
+                    android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvGenXMDestroy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/general_xm_cost"
+                    android:textColor="@color/color_bleu" />
+			</LinearLayout>
+		</LinearLayout> <!-- fin zone XMP Buster -->
+		
+		<!-- AP -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+	        <LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvGenAPDestroy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/general_ap_destroy"
+                    android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvGenAPCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/general_ap_create"
+                    android:textColor="@color/color_bleu" />
+			</LinearLayout>
+		</LinearLayout> <!-- fin zone puissance -->
+		
+		
+	</LinearLayout>
+    </LinearLayout>
+	</ScrollView>
+</LinearLayout> <!-- fin layout general -->

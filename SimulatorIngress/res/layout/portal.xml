@@ -1,0 +1,751 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="#000000" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar" />
+	<ScrollView
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bt_border_off"
+        android:orientation="vertical"
+        android:padding="5dp" >
+        
+		
+        <!-- level 1-->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- level -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+
+			        <TextView
+			            android:id="@+id/tvPortalLevel_0"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_level"
+			            android:textColor="@color/color_bleu" />
+
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalEnergy_0"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_energy"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalDecay_0"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_decay"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalRange_0"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_range"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			
+			
+			
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalReso_0"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_reso"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalPlayer_0"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_player"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+		</LinearLayout> <!-- fin level 1 -->
+		
+		<!-- level 2-->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- level -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+
+			        <TextView
+			            android:id="@+id/tvPortalLevel_1"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_level"
+			            android:textColor="@color/color_bleu" />
+
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalEnergy_1"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_energy"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalDecay_1"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_decay"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalRange_1"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_range"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalReso_1"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_reso"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalPlayer_1"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_player"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+		</LinearLayout> <!-- fin level 1 -->
+        
+        <!-- level 2-->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- level -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+
+			        <TextView
+			            android:id="@+id/tvPortalLevel_2"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_level"
+			            android:textColor="@color/color_bleu" />
+
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalEnergy_2"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_energy"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalDecay_2"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_decay"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalRange_2"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_range"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalReso_2"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_reso"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalPlayer_2"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_player"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+		</LinearLayout> <!-- fin level 2 -->
+		
+		<!-- level 3-->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- level -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+
+			        <TextView
+			            android:id="@+id/tvPortalLevel_3"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_level"
+			            android:textColor="@color/color_bleu" />
+
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalEnergy_3"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_energy"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalDecay_3"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_decay"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalRange_3"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_range"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalReso_3"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_reso"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalPlayer_3"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_player"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+		</LinearLayout> <!-- fin level 3 -->
+        
+		<!-- level 4 -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- level -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+
+			        <TextView
+			            android:id="@+id/tvPortalLevel_4"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_level"
+			            android:textColor="@color/color_bleu" />
+
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalEnergy_4"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_energy"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalDecay_4"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_decay"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalRange_4"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_range"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalReso_4"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_reso"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalPlayer_4"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_player"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+		</LinearLayout> <!-- fin level 4 -->
+		
+		<!-- level 5 -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- level -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+
+			        <TextView
+			            android:id="@+id/tvPortalLevel_5"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_level"
+			            android:textColor="@color/color_bleu" />
+
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalEnergy_5"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_energy"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalDecay_5"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_decay"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalRange_5"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_range"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalReso_5"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_reso"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalPlayer_5"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_player"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+		</LinearLayout> <!-- fin level 5 -->
+		
+		<!-- level 6 -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- level -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+
+			        <TextView
+			            android:id="@+id/tvPortalLevel_6"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_level"
+			            android:textColor="@color/color_bleu" />
+
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalEnergy_6"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_energy"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalDecay_6"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_decay"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalRange_6"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_range"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalReso_6"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_reso"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalPlayer_6"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_player"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+		</LinearLayout> <!-- fin level 6 -->
+		
+		<!-- level 7 -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:orientation="vertical"
+	        android:padding="5dp" >
+			<!-- level -->
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+
+			        <TextView
+			            android:id="@+id/tvPortalLevel_7"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_level"
+			            android:textColor="@color/color_bleu" />
+
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalEnergy_7"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_energy"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalDecay_7"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_decay"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalRange_7"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_range"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalReso_7"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_reso"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:padding="5dp" >
+			        <TextView
+			            android:id="@+id/tvPortalPlayer_7"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:gravity="left"
+			            android:text="@string/portal_player"
+			            android:textColor="@color/color_bleu" />
+			</LinearLayout>
+		</LinearLayout> <!-- fin level 7 -->
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout> <!-- fin layout general -->
