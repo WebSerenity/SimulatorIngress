@@ -3,7 +3,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@color/color_black"
-    android:orientation="horizontal" >
+    android:orientation="horizontal" 
+    android:id="@+id/svMenuHoriz">
 
 	<LinearLayout
 	    android:id="@+id/llActionBar"
@@ -30,6 +31,15 @@
 	        android:paddingLeft="10dp"
 	        android:paddingRight="10dp"
 	        android:text="@string/tab_round"
+	        android:textColor="@color/color_off" />
+	    <Button
+	        android:id="@+id/btOptiReso"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bt_border_off"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:text="@string/tab_opti_reso"
 	        android:textColor="@color/color_off" />
 		
 	    <Button

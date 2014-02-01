@@ -3,6 +3,8 @@ package com.simultor.ingress;
 import com.simulator.ingress.R;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.HorizontalScrollView;
 
 public class Hack extends BaseActivity{
 	
@@ -11,6 +13,17 @@ public class Hack extends BaseActivity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.hack);
 		
+	}
+	
+	@Override
+	public void onWindowFocusChanged(boolean hasFocus) {
+		super.onWindowFocusChanged(hasFocus);
+	    HorizontalScrollView hsv = (HorizontalScrollView) findViewById(R.id.svMenuHoriz);
+	    Button button = (Button) findViewById(R.id.btHack);
+	    int x, y;
+	    x = button.getLeft();
+	    y = button.getTop();
+	    hsv.scrollTo(x, y);
 	}
 	
 	@Override

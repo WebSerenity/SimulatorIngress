@@ -3,10 +3,10 @@
     <color name="color_black">#000000</color>
     <color name="color_white">#FFFFFF</color>
     <color name="color_jaune">#FFD34A</color>
-    <color name="color_bleu">#8CFFFF</color>
-    <color name="color_ll_border">#00F3FF</color>
+    <color name="color_bleu">#FF11EA11</color>
+    <color name="color_ll_border">#FF11EA11</color>
     <color name="color_ll_background">#21454A</color>
-    <color name="color_off">#8CFFFF</color>
+    <color name="color_off">#FF11EA11</color>
     <color name="color_on">#FFD34A</color>
     <color name="color_waiting">#E625CE</color>
     

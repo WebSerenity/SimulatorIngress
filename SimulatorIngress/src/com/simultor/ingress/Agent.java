@@ -11,6 +11,8 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
@@ -295,6 +297,16 @@ public class Agent extends BaseActivity{
 		});
 	}
 	
+	@Override
+	public void onWindowFocusChanged(boolean hasFocus) {
+		super.onWindowFocusChanged(hasFocus);
+	    HorizontalScrollView hsv = (HorizontalScrollView) findViewById(R.id.svMenuHoriz);
+	    Button button = (Button) findViewById(R.id.btAgent);
+	    int x, y;
+	    x = button.getLeft();
+	    y = button.getTop();
+	    hsv.scrollTo(x, y);
+	}
 	
 	 @Override
 	protected void onResume() {

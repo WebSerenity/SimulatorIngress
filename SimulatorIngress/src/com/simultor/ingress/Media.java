@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
+import android.widget.Button;
+import android.widget.HorizontalScrollView;
 import android.widget.TextView;
 
 public class Media extends BaseActivity{
@@ -33,6 +35,17 @@ public class Media extends BaseActivity{
 		WordtoSpanPart_2.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.color_jaune)), 0, WordtoSpanPart_2.length(),Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 		tvMediaRecycle.append(WordtoSpanPart_2);
 		
+	}
+	
+	@Override
+	public void onWindowFocusChanged(boolean hasFocus) {
+		super.onWindowFocusChanged(hasFocus);
+	    HorizontalScrollView hsv = (HorizontalScrollView) findViewById(R.id.svMenuHoriz);
+	    Button button = (Button) findViewById(R.id.btMedia);
+	    int x, y;
+	    x = button.getLeft();
+	    y = button.getTop();
+	    hsv.scrollTo(x, y);
 	}
 	
 	@Override

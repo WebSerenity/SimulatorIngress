@@ -44,6 +44,7 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
@@ -147,7 +148,7 @@ public class Simulator extends BaseActivity implements com.simulator.element.Asy
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.simulator);
-		
+		svMenuHoriz = (HorizontalScrollView)findViewById(R.id.svMenuHoriz);
 		
 		
 		
@@ -411,11 +412,21 @@ public class Simulator extends BaseActivity implements com.simulator.element.Asy
 		
 	}
 
+	@Override
+	public void onWindowFocusChanged(boolean hasFocus) {
+		super.onWindowFocusChanged(hasFocus);
+	    HorizontalScrollView hsv = (HorizontalScrollView) findViewById(R.id.svMenuHoriz);
+	    Button button = (Button) findViewById(R.id.btSimulator);
+	    int x, y;
+	    x = button.getLeft();
+	    y = button.getTop();
+	    hsv.scrollTo(x, y);
+	}
 
 	private void initiatePopupWindowReso(final int refReso) {
 		LayoutInflater inflater = (LayoutInflater) Simulator.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View layout = inflater.inflate(R.layout.reso_choix,(ViewGroup) findViewById(R.id.popup_element));
-		popupReso = new PopupWindow(layout, 300, 370, true);
+		popupReso = new PopupWindow(layout, (int) (screenWidth*0.5), (int) (screenHeight*0.5), true);
 		popupReso.showAtLocation(layout, Gravity.CENTER, 0, 0);
 		for (int Cpt = 0; Cpt < ZONE_RESO + 1; Cpt++){
 			final int choix = Cpt;
@@ -440,7 +451,7 @@ public class Simulator extends BaseActivity implements com.simulator.element.Asy
 	private void initiatePopupWindowDecay() {
 		LayoutInflater inflater = (LayoutInflater) Simulator.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View layout = inflater.inflate(R.layout.decay_choix,(ViewGroup) findViewById(R.id.popup_decay));
-		popupDecay = new PopupWindow(layout, 300, 370, true);
+		popupDecay = new PopupWindow(layout, (int) (screenWidth*0.5), (int) (screenHeight*0.5), true);
 		popupDecay.showAtLocation(layout, Gravity.CENTER, 0, 0);
 		
 		for (int Cpt = 0; Cpt < NBR_DECAY; Cpt++){
@@ -467,7 +478,7 @@ public class Simulator extends BaseActivity implements com.simulator.element.Asy
 		//link = 0;
 		LayoutInflater inflater = (LayoutInflater) Simulator.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View layout = inflater.inflate(R.layout.link_choix,(ViewGroup) findViewById(R.id.popup_link));
-		popupLink = new PopupWindow(layout, 300, 370, true);
+		popupLink = new PopupWindow(layout, (int) (screenWidth*0.5), (int) (screenHeight*0.5), true);
 		popupLink.showAtLocation(layout, Gravity.CENTER, 0, 0);
 		edLinkNbr = (EditText)layout.findViewById(R.id.etLinkNbr);
 		tvLinkOk = (TextView)layout.findViewById(R.id.tvLinkOk);
@@ -491,7 +502,7 @@ public class Simulator extends BaseActivity implements com.simulator.element.Asy
 	private void initiatePopupWindowField(final int refField) {
 		LayoutInflater inflater = (LayoutInflater) Simulator.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View layout = inflater.inflate(R.layout.field_choix,(ViewGroup) findViewById(R.id.popup_field));
-		popupField = new PopupWindow(layout, 300, 370, true);
+		popupField = new PopupWindow(layout, (int) (screenWidth*0.5), (int) (screenHeight*0.5), true);
 		popupField.showAtLocation(layout, Gravity.CENTER, 0, 0);
 		edFieldNbr = (EditText)layout.findViewById(R.id.etfieldNbr);
 		tvFieldOk = (TextView)layout.findViewById(R.id.tvfieldOk);

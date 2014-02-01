@@ -13,6 +13,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.View.OnTouchListener;
+import android.widget.Button;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -102,6 +104,17 @@ public class Virus extends BaseActivity{
 		updateInfo();
 		
 		
+	}
+	
+	@Override
+	public void onWindowFocusChanged(boolean hasFocus) {
+		super.onWindowFocusChanged(hasFocus);
+	    HorizontalScrollView hsv = (HorizontalScrollView) findViewById(R.id.svMenuHoriz);
+	    Button button = (Button) findViewById(R.id.btVirus);
+	    int x, y;
+	    x = button.getLeft();
+	    y = button.getTop();
+	    hsv.scrollTo(x, y);
 	}
 	
 	private void updateInfo(){

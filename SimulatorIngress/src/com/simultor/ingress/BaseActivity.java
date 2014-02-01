@@ -62,6 +62,7 @@ public abstract class BaseActivity extends Activity {
 	
 	protected static int actionBarHeight = 75;
 	
+	protected HorizontalScrollView svMenuHoriz;
 	private static Button btSimulator;
 	private static Button btLevel;
 	private static Button btAP;
@@ -77,6 +78,7 @@ public abstract class BaseActivity extends Activity {
 	private static Button btPortalKey;
 	private static Button btPowerCube;
 	private static Button btRound;
+	private static Button btOptiReso;
 	
 	
 	
@@ -95,6 +97,7 @@ public abstract class BaseActivity extends Activity {
 	protected static int BT_AGENT = 12;
 	protected static int BT_ATTACK = 13;
 	protected static int BT_ROUND = 14;
+	protected static int BT_OPTI_RESO = 15;
 	
 	protected static int ZONE_MOD = 4;
 	protected static int ZONE_RESO = 8;
@@ -432,6 +435,7 @@ public abstract class BaseActivity extends Activity {
 		btHack = (Button)findViewById(R.id.btHack);
 		btAttack = (Button)findViewById(R.id.btAttack);
 		btRound = (Button)findViewById(R.id.btRound);
+		btOptiReso = (Button)findViewById(R.id.btOptiReso);
 		
 		
 		
@@ -450,6 +454,16 @@ public abstract class BaseActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Intent intent =  new Intent(BaseActivity.this, Round.class);
+				startActivity(intent);
+				finish();
+			}
+		});
+		
+		btOptiReso.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent =  new Intent(BaseActivity.this, OptiReso.class);
 				startActivity(intent);
 				finish();
 			}
@@ -606,6 +620,8 @@ public abstract class BaseActivity extends Activity {
 		btSimulator.setTextColor(getResources().getColor(R.color.color_off));
 		btRound.setBackgroundDrawable(getResources().getDrawable(R.drawable.bt_border_off));
 		btRound.setTextColor(getResources().getColor(R.color.color_off));
+		btOptiReso.setBackgroundDrawable(getResources().getDrawable(R.drawable.bt_border_off));
+		btOptiReso.setTextColor(getResources().getColor(R.color.color_off));
 		btLevel.setBackgroundDrawable(getResources().getDrawable(R.drawable.bt_border_off));
 		btLevel.setTextColor(getResources().getColor(R.color.color_off));
 		btAP.setBackgroundDrawable(getResources().getDrawable(R.drawable.bt_border_off));
@@ -639,6 +655,10 @@ public abstract class BaseActivity extends Activity {
 		if (bt == BT_ROUND){
 			btRound.setBackgroundDrawable(getResources().getDrawable(R.drawable.bt_border_on));
 			btRound.setTextColor(getResources().getColor(R.color.color_on));
+		}
+		if (bt == BT_OPTI_RESO){
+			btOptiReso.setBackgroundDrawable(getResources().getDrawable(R.drawable.bt_border_on));
+			btOptiReso.setTextColor(getResources().getColor(R.color.color_on));
 		}
 		if (bt == BT_LEVEL){
 			btLevel.setBackgroundDrawable(getResources().getDrawable(R.drawable.bt_border_on));

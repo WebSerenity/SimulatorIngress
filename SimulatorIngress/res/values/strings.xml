@@ -24,6 +24,7 @@
     <string name="tab_resonator">Resonator</string>
     <string name="tab_power_cube">Power Cube</string>
     <string name="tab_media">Media</string>
+    <string name="tab_opti_reso">Opti. Reso</string>
     
     <string name="common">Common</string>
     <string name="rare">Rare</string>
@@ -283,20 +284,31 @@
     
     
     <string name="round_titre">Round Calculation</string>
-    <string name="round_actual">Actual XM :</string>
-    <string name="round_error_actual">Please, set Actual XM !</string>
+    <string name="round_actual">Actual AP :</string>
+    <string name="round_error_actual">Please, set Actual AP !</string>
     <string name="round_error_number">Actual and Objectif must not containt space or dot.</string>
-    <string name="round_objectif">Objectif XM :</string>
-    <string name="round_error_objectif">Please, set Objectif XM !</string>
+    <string name="round_objectif">Objectif AP :</string>
+    <string name="round_error_objectif">Please, set Objectif AP !</string>
     <string name="round_calculate">Calculate</string>
     <string name="round_create">Create</string>
     <string name="round_link">link(s)</string>
-    <string name="round_hack">Hack ennemy portal</string>
+    <string name="round_hack">Hack enemy portal</string>
     <string name="round_recharge">Recharge</string>
     <string name="round_mod">Set Mod(s)</string>
     <string name="round_impossible">Objectif Impossible</string>
     <string name="round_use">Use Hack and or Recharge resonator</string>
     <string name="round_too_small">Objectif must be higher than Actual</string>
     
+    
+    <string name="opti_reso_titre">Resonators Optimisation</string>
+    <string name="opti_reso_nbr_lv1">Nbr of Reso. Level 1 :</string>
+    <string name="opti_reso_nbr_lv2">Nbr of Reso. Level 2 :</string>
+    <string name="opti_reso_nbr_lv3">Nbr of Reso. Level 3 :</string>
+    <string name="opti_reso_nbr_lv4">Nbr of Reso. Level 4 :</string>
+    <string name="opti_reso_nbr_lv5">Nbr of Reso. Level 5 :</string>
+    <string name="opti_reso_nbr_lv6">Nbr of Reso. Level 6 :</string>
+    <string name="opti_reso_nbr_lv7">Nbr of Reso. Level 7 :</string>
+    <string name="opti_reso_nbr_lv8">Nbr of Reso. Level 8 :</string>
+    <string name="opti_reso_opti">Optimisation</string>
 
 </resources>

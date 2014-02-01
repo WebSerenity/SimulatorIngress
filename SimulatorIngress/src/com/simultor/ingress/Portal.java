@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
+import android.widget.Button;
+import android.widget.HorizontalScrollView;
 import android.widget.TextView;
 
 public class Portal extends BaseActivity{
@@ -108,6 +110,17 @@ public class Portal extends BaseActivity{
 			tvPortalPlayer[Cpt].append(spannablePlayer_2);
 		}
 		
+	}
+	
+	@Override
+	public void onWindowFocusChanged(boolean hasFocus) {
+		super.onWindowFocusChanged(hasFocus);
+	    HorizontalScrollView hsv = (HorizontalScrollView) findViewById(R.id.svMenuHoriz);
+	    Button button = (Button) findViewById(R.id.btPortal);
+	    int x, y;
+	    x = button.getLeft();
+	    y = button.getTop();
+	    hsv.scrollTo(x, y);
 	}
 	
 	@Override
