@@ -276,12 +276,20 @@
     <string name="attack_level">Level</string>
     
     <string name="help_version">Version : </string>
+    <string name="help_simulator">Simulator : </string>
     <string name="help_reso">. Click on a resonator to select its level</string>
     <string name="help_decay">. Click on Decay to define the number of days to decay</string>
     <string name="help_link">. Click on Link to define the number of links</string>
     <string name="help_field">. Click on Field to define the number of fields</string>
     <string name="help_mod">. Click on upper arrow or downer arrow to define a mod</string>
-    
+    <string name="help_round">Round : </string>
+    <string name="help_round_1">. Give your AP</string>
+    <string name="help_round_2">. Give your Objective in AP</string>
+    <string name="help_round_3">. Click on Calculate</string>
+    <string name="help_opti_reso">Opti. Reso : </string>
+    <string name="help_opti_reso_1">. Give the number of resonators of each level</string>
+    <string name="help_opti_reso_2">. Click on Optimisation</string>
+    <string name="help_opti_reso_3">. You get a list of sequences to deploy resonators by portail </string>
     
     <string name="round_titre">Round Calculation</string>
     <string name="round_actual">Actual AP :</string>

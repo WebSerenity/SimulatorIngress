@@ -174,6 +174,7 @@ public abstract class BaseActivity extends Activity {
 		try {
 			pInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
 			setTitle(getResources().getString(R.string.app_name) + " " + pInfo.versionName);
+			VERSION_NUM = pInfo.versionName;
 		} catch (NameNotFoundException e) {
 			if (fgDebug){Log.d(TAG, "error version = " + e.getMessage());};
 		}
